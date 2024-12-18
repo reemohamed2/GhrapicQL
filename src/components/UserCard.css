@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+  background-color: #121212; /* Dark background */
+  color: #fff; /* White text */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+  align-items: flex-start; /* Align cards to the top */
+  margin: 30px auto;
+  max-width: 1200px; /* Optional: Limit container width */
+  padding: 20px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #1e1e1e; /* Dark background for cards */
+  border: 1px solid #333; /* Dark border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  padding: 40px 20px;
+  max-width: 300px; /* Set a fixed width for each card */
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-top: 20px;
+  min-height: 370px; /* Adjust chart height */
+}
+
+.card h2 {
+  font-size: 1.5rem; /* Slightly larger font for the heading */
+  color: #f4f4f4; /* Light color for the heading */
+  margin-bottom: 15px; /* Space below the heading */
+} 
+.card p {
+  font-size: 1rem; /* Standard font size for paragraphs */
+  color: #ccc; /* Lighter text for better readability */
+  margin: 10px 0; /* Space between paragraphs */
+}
+.card strong {
+  font-weight: bold;
+  color: #ecce49; /* Highlight cohort with a golden color */
+}
+
+.card button {
+  background-color: #007bff; /* Bright orange button */
+  color: white; /* White text on the button */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px; /* Rounded button corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 1rem;
+  margin-top: 20px; /* Space between the button and the content */
+  width: 100%; /* Full-width button */
+}
+/* Hover Effect for Cards */
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Title and Text Styles */
+h2 {
+  color: #fff; /* White text */
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem; /* Larger font for title */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem; /* Standard font size for text */
+  margin: 5px 0;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff; /* Blue button */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 2px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px auto 0; /* Center the button horizontally */
+  display: block;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: Specific styles for charts */
+.xpChart, .skillPie , .Top {
+  min-height: 370px;  /* Adjust chart height */
+  margin-top: 20px; /* Add space above the charts */
+  min-width: 300px;
+}
+ 
+.top-cohort-container h2 {
+  font-size: 1.8rem; /* Larger font for the heading */
+  
+}
+ol {
+  list-style-type: none; /* Remove default list styling */
+  padding-left: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+li {
+  background-color: #333; /* Dark background for each list item */
+  padding: 15px;
+  margin-bottom: 10px; /* Space between items */
+  border-radius: 8px; /* Rounded corners for each item */
+  display: flex;
+  justify-content: space-between; /* Space out name and level */
+  align-items: center; /* Vertically center the content */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color change */
+}
+
+li span {
+  font-weight: bold; /* Bold for the level */
+  color: #ffcc00; /* Golden color for the level */
+}
+
+
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center the items when stacked */
+  }
+
+  .card {
+    width: 90%; /* Make cards take up more width on smaller screens */
+  }
+}
